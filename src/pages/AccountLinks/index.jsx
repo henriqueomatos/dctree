@@ -1,7 +1,5 @@
-import { useState } from 'react';
-import './App.css';
-import Link from './components/Link';
-import LinkList from './components/LinkList';
+import LinkItem from '@/components/LinkItem';
+import LinkList from '@/components/LinkList';
 
 const links = [
   {
@@ -26,11 +24,10 @@ const links = [
   
 ]
 
-function App() {
+export default function AccountLinks() {
     return(
     <LinkList>
-      { links.map(item => <Link {...item} />)}
+      { links.map((item, index) => <LinkItem  key={index} {...item} />)}
     </LinkList>)
 }
 
-export default App
