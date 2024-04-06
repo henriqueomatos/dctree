@@ -1,5 +1,10 @@
+import Admin from "@/pages/Admin";
+
 export default function Dashboard(){
     return (
-        <h1>Dashboard</h1>
-    )
+        <Admin>
+            <h1>Dashboard</h1>
+        </Admin>
+        
+    );
 }
