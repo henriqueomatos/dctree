@@ -8,6 +8,7 @@ import {
   import AccountLinks from "@/pages/AccountLinks";
   import Dashboard from "./pages/Admin/Dashboard";
   import CreateLink from "@/pages/Admin/CreateLink";
+  import Ui from "./pages/Admin/Ui";
 
 
   
@@ -20,6 +21,7 @@ import {
         <Route path="/admin">
           <Route path="dashboard" element={ <Dashboard />}></Route>
           <Route path="create-link" element={ <CreateLink />}></Route>
+          <Route path="ui" element={ <Ui />}></Route>
         </Route>
         </>
     )
