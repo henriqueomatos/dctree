@@ -36,8 +36,15 @@ export default {
         this.setItem('ui-style', data);
     },
 
-    getUiStyle(){
+    
+
+    getUiStyle(attribute, defaultValue) {
         let result = this.getItem('ui-style');
+
+        if (attribute) {
+            return result[attribute] ?? defaultValue
+        }
+
         let uistyle = {};
 
         Object.entries(result).forEach(item => {
